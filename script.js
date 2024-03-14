@@ -52,6 +52,10 @@ while (restartGame) {
 
   // Continue looping until the user guesses the correct number or runs out of attempts (NOTE: Loops until a BREAK keyword is run)
   while (true) {
+    if (guess === `Crossing`) {
+      alert(`The number is ${randomNum}`);
+    }
+
     // Tries to convert the user's guess into a number
     guess = parseInt(guess);
 
